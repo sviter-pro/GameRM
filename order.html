@@ -322,7 +322,7 @@
             document.getElementById('order-id').textContent = orderId;
 
             // Отправляем данные в Firebase
-            database.ref('Hack/RoyalMatch/' + orderId).set(orderData)
+            database.ref('Hack/Royal Match/' + orderId).set(orderData)
                 .then(() => {
                     // Показываем сообщение об успехе
                     document.getElementById('order-form').style.display = 'none';
