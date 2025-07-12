@@ -261,7 +261,7 @@
                         const dollarAmount = parseFloat(productData.sum.replace('$', '').trim());
                         const rubleAmount = Math.round(dollarAmount * exchangeRate);
                         
-                        document.getElementById('product-price').textContent = `${dollarAmount} $`;
+                        document.getElementById('product-price').textContent = `${dollarAmount}`;
                         document.getElementById('product-price-rub').textContent = rubleAmount;
                     } else {
                         showError("Продукт не найден в базе данных");
